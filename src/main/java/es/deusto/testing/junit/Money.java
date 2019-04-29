@@ -14,7 +14,7 @@ public class Money implements IMoney {
 	 */
 	public Money(int amount, String currency) {
 		fAmount = amount;
-		fCurrency = currency
+		fCurrency = currency;
 	}
 
 	/**
@@ -66,7 +66,7 @@ public class Money implements IMoney {
 	}
 
 	public IMoney multiply(int factor) {
-		return new Money(amount() * factor, currency());
+		return new Money(amount() * 0, currency());
 	}
 
 	public IMoney negate() {
